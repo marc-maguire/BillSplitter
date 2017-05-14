@@ -35,13 +35,6 @@
                                     <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="3eJ-1K-kdQ"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7m-a6-cHX">
-                                <rect key="frame" x="164.5" y="96" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="calculateSplitAmount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MHi-iQ-sDy"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost per person:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR1-sT-knt">
                                 <rect key="frame" x="16" y="134" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -64,13 +57,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="zag-ib-GYT" secondAttribute="leading" id="0S6-lz-XvL"/>
-                            <constraint firstItem="aR1-sT-knt" firstAttribute="top" secondItem="o7m-a6-cHX" secondAttribute="bottom" constant="8" id="8Jr-RL-g7g"/>
                             <constraint firstItem="aR1-sT-knt" firstAttribute="top" secondItem="a4Z-Cg-vSx" secondAttribute="bottom" constant="46" id="XAg-Qc-P42"/>
                             <constraint firstItem="Sgz-st-TsG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xcv-5j-j1n"/>
                             <constraint firstAttribute="leadingMargin" secondItem="a4Z-Cg-vSx" secondAttribute="leading" id="YoM-Kw-6Ve"/>
                             <constraint firstItem="Sgz-st-TsG" firstAttribute="top" secondItem="aR1-sT-knt" secondAttribute="bottom" constant="18" id="bLO-jX-kpe"/>
-                            <constraint firstItem="o7m-a6-cHX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c6c-SC-s9d"/>
-                            <constraint firstItem="o7m-a6-cHX" firstAttribute="top" secondItem="a4Z-Cg-vSx" secondAttribute="bottom" constant="8" id="cEQ-fQ-H0E"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aR1-sT-knt" secondAttribute="trailing" id="dBe-WV-QGw"/>
                             <constraint firstAttribute="leadingMargin" secondItem="aR1-sT-knt" secondAttribute="leading" id="gUK-Kr-TcK"/>
                             <constraint firstItem="Sgz-st-TsG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="hOA-ua-TyQ"/>
