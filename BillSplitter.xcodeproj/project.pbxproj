@@ -58,8 +58,6 @@
 		926E69CB1EC7CCB400BD57C6 /* BillSplitter */ = {
 			isa = PBXGroup;
 			children = (
-				926E69CF1EC7CCB400BD57C6 /* AppDelegate.h */,
-				926E69D01EC7CCB400BD57C6 /* AppDelegate.m */,
 				926E69D21EC7CCB400BD57C6 /* ViewController.h */,
 				926E69D31EC7CCB400BD57C6 /* ViewController.m */,
 				926E69D51EC7CCB400BD57C6 /* Main.storyboard */,
@@ -74,6 +72,8 @@
 		926E69CC1EC7CCB400BD57C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				926E69CF1EC7CCB400BD57C6 /* AppDelegate.h */,
+				926E69D01EC7CCB400BD57C6 /* AppDelegate.m */,
 				926E69CD1EC7CCB400BD57C6 /* main.m */,
 			);
 			name = "Supporting Files";
