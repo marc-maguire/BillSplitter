@@ -29,6 +29,8 @@
     [super viewDidLoad];
     self.slider.minimumValue = 2.0;
     self.slider.maximumValue = 8.0;
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(calculateSplitAmount:) name:UITextFieldTextDidChangeNotification object:nil];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -39,14 +41,16 @@
 }
 - (IBAction)calculateSplitAmount:(id)sender {
     
-   // NSNumberFormatter *formatter = [[NSNumberFormatter alloc]init];
-    
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc]init];
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    [formatter setMaximumFractionDigits:2];
     
     NSDecimalNumber *billAmount = [[NSDecimalNumber alloc]initWithString:self.textField.text];
     NSDecimalNumber *peopleToDivide = [[NSDecimalNumber alloc]initWithFloat:self.slider.value];
     NSDecimalNumber *totalBill = [billAmount decimalNumberByDividingBy:peopleToDivide];
+
     
-    self.label.text = [NSString stringWithFormat:@"Cost per person: $%@.",totalBill];
+    self.label.text = [NSString stringWithFormat:@"Cost per person: $%@.",[formatter stringFromNumber:totalBill]];
     
     
 }
