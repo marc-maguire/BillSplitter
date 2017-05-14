@@ -72,6 +72,7 @@
         sender.value = 8.0;
     }
     self.sliderLabel.text = [NSString stringWithFormat:@"Number of people: %.0f",sender.value];
+    [self calculateSplitAmount:nil];
 }
 
 @end
